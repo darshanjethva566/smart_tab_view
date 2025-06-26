@@ -1,0 +1,17 @@
+name: smart_tab_view_example
+description: Example app to demonstrate smart_tab_view plugin
+publish_to: 'none' # This prevents it from being published
+
+version: 1.0.0
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  smart_tab_view:
+    path: ../
+
+flutter:
+  uses-material-design: true
