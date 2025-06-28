@@ -22,3 +22,11 @@
 ## 1.0.8
 
 - Resolve bugs
+
+## 1.0.9
+
+- Added custom peroperty
+
+## 1.1.0
+
+- Added custom peroperty

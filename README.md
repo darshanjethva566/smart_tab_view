@@ -2,7 +2,7 @@
 
 [![pub version](https://img.shields.io/pub/v/smart_tab_view)](https://pub.dev/packages/smart_tab_view)  
 [![GitHub Repo](https://img.shields.io/badge/github-smart__tab__view-blue?logo=github)](https://github.com/darshanjethva566/smart_tab_view)
-
+![Smart Tab View Demo](https://raw.githubusercontent.com/darshanjethva566/smart_tab_view/main/media/smart_tab_view-ezgif.com-effects.gif)
 A scroll-aware tab view widget that automatically syncs the selected tab with scroll position. Supports both horizontal (top) and vertical (left) tab layouts. Perfect for multi-section pages with dynamic content.
 
 ---
