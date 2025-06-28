@@ -25,12 +25,16 @@ class ExampleHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("SmartTabView Example")),
       body: SmartTabView(
-        tabPosition: TabPosition.top,
+
+        isScrollable: true,
+        verticalTabWidth: 60,
+        tabPosition: TabPosition.left,
         tabs: const [
-          Tab(icon: Icon(Icons.info), text: "Overview"),
-          Tab(icon: Icon(Icons.star), text: "Benefits"),
-          Tab(icon: Icon(Icons.timeline), text: "Process"),
-          Tab(icon: Icon(Icons.check), text: "Requirement"),
+
+          Tab(icon: Icon(Icons.info), ),
+          Tab(icon: Icon(Icons.star), ),
+          Tab(icon: Icon(Icons.timeline),),
+          Tab(icon: Icon(Icons.check), ),
         ],
         sections: const [
           ExampleSection(title: 'Overview', color: Colors.orange),
@@ -55,10 +59,10 @@ class ExampleSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: List.generate(
-          20,
+          40,
               (i) => Padding(
             padding: const EdgeInsets.symmetric(vertical: 4),
-            child: Text('$title Line ${i + 1}', style: const TextStyle(fontSize: 16)),
+            child: Text('$title Line ${i + 1}', style: const TextStyle(fontSize: 13)),
           ),
         ),
       ),
