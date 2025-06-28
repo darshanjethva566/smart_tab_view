@@ -28,13 +28,14 @@ class ExampleHome extends StatelessWidget {
 
         isScrollable: true,
         verticalTabWidth: 60,
+        verticalTabPadding: EdgeInsets.symmetric(vertical: 20,horizontal: 30),
         tabPosition: TabPosition.left,
+        tabPadding: EdgeInsets.all(20),
         tabs: const [
-
-          Tab(icon: Icon(Icons.info), ),
-          Tab(icon: Icon(Icons.star), ),
-          Tab(icon: Icon(Icons.timeline),),
-          Tab(icon: Icon(Icons.check), ),
+          Icon(Icons.ac_unit),
+          Icon(Icons.production_quantity_limits),
+          Icon(Icons.access_alarm),
+          Icon(Icons.vaccines),
         ],
         sections: const [
           ExampleSection(title: 'Overview', color: Colors.orange),

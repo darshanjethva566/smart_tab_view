@@ -47,10 +47,10 @@ packages:
     dependency: "direct main"
     description:
       name: smart_tab_view
-      sha256: b85cae6ba77bd968bf04d9b0e1a3935b95301446149396d43f1688a71d89835b
+      sha256: ff076083fdf4197c71530a5ec1f06a630d6b80d3abda911dea2685cb716489cb
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.3"
+    version: "1.0.8"
   vector_math:
     dependency: transitive
     description:

@@ -9,7 +9,7 @@ A scroll-aware tab view widget that automatically syncs the selected tab with sc
 
 ## ✨ Features
 
-- ✅ Auto tab selection while scrolling through sections
+- ✅ Auto tab selection while scrolling through sections (like Blinkit/Swiggy/Zomato)
 - 🧭 Scroll-to-section on tab tap
 - ↕️ Supports both top (horizontal) and left (vertical) tab layouts
 - 🎨 Accepts custom widgets for both tabs and sections
@@ -25,7 +25,7 @@ To ensure proper scrolling and tab synchronization:
 > 🔸 Each section should have enough vertical content.  
 > If all sections are very short (e.g., only 1–2 lines), the page will not scroll, and automatic tab switching will not work as expected.
 
-📌 Best Practice: Use more content per section or apply a `minHeight` constraint to ensure a scrollable layout.
+📌 **Best Practice:** Use more content per section or apply a `minHeight` constraint to ensure a scrollable layout.
 
 ---
 
@@ -36,8 +36,3 @@ Add this to your `pubspec.yaml`:
 ```yaml
 dependencies:
   smart_tab_view: ^<latest_version>
-
-
-## 👨‍💻 Author
-
-Made with ❤️ by [@darshanjethva566](https://github.com/darshanjethva566)
