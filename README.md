@@ -1,36 +1,43 @@
 # SmartTabView
 
-[![pub version](https://img.shields.io/pub/v/smart_tab_view)](https://pub.dev/packages/smart_tab_view)
+[![pub version](https://img.shields.io/pub/v/smart_tab_view)](https://pub.dev/packages/smart_tab_view)  
 [![GitHub Repo](https://img.shields.io/badge/github-smart__tab__view-blue?logo=github)](https://github.com/darshanjethva566/smart_tab_view)
 
-A scroll-aware tab view widget that syncs tab selection based on scroll and supports both horizontal and vertical tab layouts.
+A scroll-aware tab view widget that automatically syncs the selected tab with scroll position. Supports both horizontal (top) and vertical (left) tab layouts. Perfect for multi-section pages with dynamic content.
 
 ---
 
 ## ✨ Features
 
-- Auto-selects tab while scrolling through sections
-- Supports both `horizontal` and `vertical` tab layouts
-- Custom widgets for both tabs and sections
-- Lightweight and easy to integrate
+- ✅ Auto tab selection while scrolling through sections
+- 🧭 Scroll-to-section on tab tap
+- ↕️ Supports both top (horizontal) and left (vertical) tab layouts
+- 🎨 Accepts custom widgets for both tabs and sections
+- 📱 Responsive & lightweight integration with customizable properties
+- 📏 Handles short sections using minimum height constraints
 
 ---
 
-## 🚀 Usage
+## ⚠️ Important Note
 
-```dart
-SmartTabView(
-  tabPosition: TabPosition.top, // or TabPosition.left
-  tabs: const [
-    Tab(text: "Overview"),
-    Tab(text: "Benefits"),
-    Tab(text: "Process"),
-    Tab(text: "Requirement"),
-  ],
-  sections: const [
-    MySection(title: 'Overview'),
-    MySection(title: 'Benefits'),
-    MySection(title: 'Process'),
-    MySection(title: 'Requirement'),
-  ],
-)
+To ensure proper scrolling and tab synchronization:
+
+> 🔸 Each section should have enough vertical content.  
+> If all sections are very short (e.g., only 1–2 lines), the page will not scroll, and automatic tab switching will not work as expected.
+
+📌 Best Practice: Use more content per section or apply a `minHeight` constraint to ensure a scrollable layout.
+
+---
+
+## 📦 Installation
+
+Add this to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  smart_tab_view: ^<latest_version>
+
+
+## 👨‍💻 Author
+
+Made with ❤️ by [@darshanjethva566](https://github.com/darshanjethva566)

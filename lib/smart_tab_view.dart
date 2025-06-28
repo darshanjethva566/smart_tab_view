@@ -195,6 +195,8 @@ class _SmartTabViewState extends State<SmartTabView>
   Widget build(BuildContext context) {
     return widget.tabPosition == TabPosition.top
         ? Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+
       children: [
         _buildTabs(),
         const Divider(height: 1, thickness: 1),
